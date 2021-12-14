@@ -25,4 +25,4 @@ function century(year) {// создаем функцию
     let b = Math.ceil(a);// округляем полученное значение к большему целому
     return b;//выводим результат
   }
-  //#5__
+  //#5__Convert a Number to a String!
