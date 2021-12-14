@@ -1,0 +1,27 @@
+
+//#1__Function 1 - hello world
+function greet(){//создаем функцию greet
+    var res = "";// создаем переменную и присваиваем ей пустую строку
+    var str = "hello world!";// создаем переменную str  и присванием ей строку " hello world!"
+    for(let i = 0; i < 1; i++) {// создаем цикл ( началы= 0, до условия пока i < 1, c шагом выполнения i++) с одной итерацией( выполнение тела цикла, пока i < 1)
+      res += str;// присваиваем строке res значение строки str 
+    }
+    return res; // выводим получившуюся строку res после цикла
+   }
+
+//#2__Can we divide it?
+function isDivideBy(number, a, b) {// создаем фукцию
+    return number % a == 0 && number % b == 0; // проверяем делится ли number на a и на b без остатка (равен ли остаток от деления нулю)
+ }
+
+ //#3__Capitalization and Mutability
+ function capitalizeWord(word) {//создаем функцию
+    return word[0].toUpperCase() + word.slice(1);// выводим слово с первым символом в верхнем регистре + верезанная часть слова со второго символа без изменений
+    }
+
+//#4__Century From Year
+function century(year) {// создаем функцию
+   let a = year/100;// количество лет делим на 100
+    let b = Math.ceil(a);// округляем полученное значение к большему целому
+    return b;//выводим результат
+  }
