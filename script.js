@@ -31,4 +31,7 @@ function century(year) {// создаем функцию
    return a;// выводит результат
  }
 
-//#6__
+//#6__Convert a String to a Number!
+var stringToNumber = function(str){
+    return Number(str);// number в данном случае преобразует тип данных строка в число
+}
