@@ -35,3 +35,10 @@ function century(year) {// создаем функцию
 var stringToNumber = function(str){
     return Number(str);// number в данном случае преобразует тип данных строка в число
 }
+
+//#7__Convert to Binary
+function toBinary(n){//создаем функцию
+  let a = n.toString(2);//преобразуем число n к двоичной системе исчесления в строковом значении  
+  let b = Number(a);//преобразуем трокое значение в численное
+  return b;//возващаем результат
+}
