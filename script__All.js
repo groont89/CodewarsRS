@@ -31,9 +31,9 @@ function numberToString(num) { // создаем функцию
 }
 
 //#6__Convert a String to a Number!
-var stringToNumber = function (str) {
+let stringToNumber = function (str) {
   return Number(str); // number в данном случае преобразует тип данных строка в число
-}
+};
 
 //#7__Convert to Binary
 function toBinary(n) { //создаем функцию
@@ -52,7 +52,7 @@ function even_or_odd(number) { //создаем функцию
 
 }
 
-//#9 Fake Binary
+//#9__Fake Binary
 function fakeBin(x) {
   let arr = x.split("");
   for (let i = 0; i < arr.length; i++) {
@@ -66,11 +66,11 @@ console.log(fakeBin('45385593107843568'));
 function areaLargestSquare(r) {
 
   let sqr = 2 * (r ** 2);
-  return sqr; //code here
+  return sqr; 
 }
 console.log(areaLargestSquare(7));
 
-//#11 Number of Decimal Digits
+//#11__Number of Decimal Digits
 function digits(n) {
   let arr = n.toString().split("");
   console.log(arr.length);
@@ -78,18 +78,18 @@ function digits(n) {
 
 digits(12345);
 
-//#12 Opposite number
+//#12__Opposite number
 function opposite(number) {
   let newNumber;
   newNumber = number * (-1);
   return newNumber;
 }
-//#13 Perimeter sequence
+//#13__Perimeter sequence
 function perimeterSequence(a, n) {
   return a * n * 4;
 }
 
-//#14 Remove First and Last Character
+//#14__Remove First and Last Character
 function removeChar(str) {
   let arr = str.split("");
   arr.shift();
@@ -99,13 +99,13 @@ function removeChar(str) {
 }
 console.log(removeChar('eloquent'));
 
-//#15 Remove String Spaces
+//#15__Remove String Spaces
 function noSpace(x) {
   return x.split(" ").join("");
 }
 console.log(noSpace('8 j 8   mBliB8g  imjB8B8  jl  B'));
 
-//#16 String ends with?
+//#16__String ends with?
 function solution(str, ending) {
   let a = ending.length;
   let arr = str.split("");
@@ -114,19 +114,19 @@ function solution(str, ending) {
 }
 console.log(solution('abcde', 'cde'));
 
-//#17 Simple multiplication
+//#17__Simple multiplication
 function simpleMultiplication(number) {
   number % 2 == 0 ? number *= 8 : number *= 9;
   return number;
 }
 console.log(simpleMultiplication(5));
 
-//#18 String repeat
+//#18__String repeat
 function repeatStr(n, s) {
   return s.repeat(n);
 }
 
-//#19 Student's Final Grade
+//#19__Student's Final Grade
 function finalGrade (exam, projects) {
   if (exam > 90 || projects >10)  return 100 
   if(exam > 75 && projects >=5)   return 90 
@@ -136,7 +136,7 @@ function finalGrade (exam, projects) {
     }
   console.log(finalGrade(0, 11));
 
-//#20 Switch it Up!
+//#20__Switch it Up!
 function switchItUp(number){
   let day;
      switch (number){
@@ -164,7 +164,7 @@ function switchItUp(number){
    return day;
  }
  
- //#21 Thinkful - Logic Drills: Traffic light
+ //#21__Thinkful - Logic Drills: Traffic light
  function updateLight(current) {
   let result;
   current == "green" ? result = "yellow" :
@@ -174,13 +174,13 @@ function switchItUp(number){
   }
   updateLight("green");
 
-//#22 Third Angle of a Triangle
+//#22__Third Angle of a Triangle
 function otherAngle(a, b) {
   console.log(180 -(a +b));
 }
 otherAngle(30,60);
 
-//#23 Transportation on vacation
+//#23__Transportation on vacation
 function rentalCarCost(d) {
   let result;
   d < 3 ? result=(d*40) :
@@ -189,12 +189,12 @@ function rentalCarCost(d) {
   return result;
 }
 
-//#24 Type of sum
+//#24__Type of sum
 function typeOfSum(a, b) {
   return typeof(a + b);
 }
 
-//#25 Will you make it?
+//#25__Will you make it?
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   let result;
   fuelLeft*mpg < distanceToPump ? result = false : result = true;
