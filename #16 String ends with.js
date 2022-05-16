@@ -1,4 +1,4 @@
-//#16 String ends with?
+//#16__String ends with?
 function solution(str, ending) {
     let a = ending.length;
     let arr = str.split("");
